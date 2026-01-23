@@ -8,7 +8,6 @@ const Summary = () => {
     <div>
       <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-10 py-20 px-6 lg:px-6 xl:px-0">
         <div className="w-full h-125">
-
           {/* //video section */}
           <div className="rounded-tr-[150px] w-full h-full overflow-hidden">
             <video
@@ -58,18 +57,18 @@ const Summary = () => {
             Our passion is figuring out how to navigate the always changing
             world of technology and create solutions that go above and beyond.
           </p>
-          
-           {/* //button section */}
-           <div className="md:w-full text-center">
-          <Link to="/portfolio">
-            <Button
-              buttonText={"Learn More"}
-              buttonStyle={
-                "text-white bg-Five py-2 rounded-none lg:rounded-none text-xs lg:text-lg"
-              }
-            ></Button>
-          </Link>
-        </div>
+
+          {/* //button section */}
+          <div className="md:w-full text-center">
+            <Link to="/portfolio">
+              <Button
+                buttonText={"Learn More"}
+                buttonStyle={
+                  "text-white bg-Five py-2 text-xs lg:text-lg"
+                }
+              ></Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

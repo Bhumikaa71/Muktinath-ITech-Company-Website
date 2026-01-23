@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const OurServices = () => {
   return (
     <div className="bg-sidebar-accent text-black p-6 md:p-4 lg:p-0">
-      <div className="container max-w-7xl mx-auto flex flex-col justify-center items-center text-center py-6 space-y-16">
+      <div className="container max-w-7xl mx-auto flex flex-col justify-center items-center text-center py-6">
 
         {/* //heading section */}
         <div className="">
@@ -24,7 +24,8 @@ const OurServices = () => {
         </div>
 
         {/* //card section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+        <div className="flex flex-col space-y-10 py-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Card
             img="assets/Research.jpg"
             heading="Consistent Research in Technical Sector"
@@ -49,12 +50,13 @@ const OurServices = () => {
             <Button
               buttonText={"Read More"}
               buttonStyle={
-                "text-white bg-Five py-2 rounded-none lg:rounded-none text-xs lg:text-lg"
+                "text-white bg-Five py-2 text-xs lg:text-lg"
               }
             ></Button>
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

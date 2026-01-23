@@ -14,7 +14,7 @@ function PortfolioVideo() {
       <div className="flex justify-center py-16 space-x-4">
         <Button
           buttonText="Images (2)"
-          buttonStyle={`py-2 rounded-none font-light text-sm lg:text-lg ${
+          buttonStyle={`py-2  font-light text-sm lg:text-lg ${
             isImage ? activeBtn : inactiveBtn
           }`}
           onClick={() => setIsImage(true)}
@@ -22,7 +22,7 @@ function PortfolioVideo() {
 
         <Button
           buttonText="Videos (2)"
-          buttonStyle={`py-2 rounded-none font-light text-sm lg:text-lg ${
+          buttonStyle={`py-2  font-light text-sm lg:text-lg ${
             !isImage ? activeBtn : inactiveBtn
           }`}
           onClick={() => setIsImage(false)}

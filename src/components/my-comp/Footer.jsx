@@ -75,8 +75,9 @@ function Footer() {
 
         {/*// Bottom Footer */}
         <div className="flex flex-col lg:flex-row lg:justify-between gap-y-4">
-          <p className="">
-            ©2026 Muktinath Itech Limited. All rights reserved.
+          <p>
+            ©{new Date().getFullYear()} Muktinath Itech Limited. All rights
+            reserved.
           </p>
 
           {/*// Social Icons */}

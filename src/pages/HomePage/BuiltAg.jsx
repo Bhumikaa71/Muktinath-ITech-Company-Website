@@ -4,7 +4,7 @@ import Heading from "../../components/my-comp/Heading";
 
 function BuiltAg() {
   return (
-    <div className="p-6 md:p-4 lg:p-6">
+    <div className="p-6 md:p-4 lg:p-6 mt-10">
       <div className="flex flex-col justify-center items-center space-y-6">
         <h2 className="text-xl lg:text-3xl">What we have built?</h2>
         
@@ -26,7 +26,6 @@ function BuiltAg() {
       {/* //video */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 py-20 text-center">
         <Video video="./assets/summary.mp4" name="Green House Automation" />
-
         <Video video="assets/green-house.mp4" name="Drone Sprayer" />
       </div>
 

@@ -50,7 +50,7 @@ function Map() {
                 <Button
                   buttonText={"Send Message"}
                   buttonStyle={
-                    "text-white bg-green-600 py-2 rounded-none lg:rounded-none text-xs lg:text-lg"
+                    "text-white bg-green-600 py-2 text-xs lg:text-lg"
                   }
                 />
               </div>
@@ -62,7 +62,7 @@ function Map() {
               title="Google Maps Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.3448459109577!2d85.32223371099242!3d27.73750772406113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb194f10250f3d%3A0x53ec15dc96d7fe12!2sMuktinath%20Krishi%20Company!5e0!3m2!1sen!2snp!4v1767337604012!5m2!1sen!2snp"
               width="100%"
-              height="500"
+              height="600"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"

@@ -14,11 +14,9 @@ function NavBar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 bg-white border-b border-gray-300 shadow-md z-50">
-
-      {/* //desktop navabar */}     
+      {/* //desktop navabar */}
       <div className="max-w-7xl mx-auto hidden lg:block">
         <div className="flex items-center justify-between h-20">
-          
           {/* Logo */}
           <img
             src="assets/itech-logo.png"
@@ -28,7 +26,6 @@ function NavBar() {
 
           {/* Nav Links */}
           <div className="flex space-x-12 text-base font-semibold text-gray-800">
-
             <Button asChild variant="ghost" className="hover:text-Five">
               <Link to="/">Home</Link>
             </Button>
@@ -85,10 +82,9 @@ function NavBar() {
               <Link to="/portfolio">Portfolio</Link>
             </Button>
 
-             <Button asChild variant="ghost" className="hover:text-Five">
+            <Button asChild variant="ghost" className="hover:text-Five">
               <Link to="/contactus">Contact Us</Link>
             </Button>
-
           </div>
         </div>
       </div>
@@ -113,12 +109,17 @@ function NavBar() {
 
         {isOpen && (
           <div className="bg-primarys text-white p-4 flex flex-col space-y-4 text-xs">
+            <Link to="/" onClick={() => setIsOpen(false)}>
+              Home
+            </Link>
+            <Link to="/about" onClick={() => setIsOpen(false)}>
+              About
+            </Link>
+            <Link to="/services" onClick={() => setIsOpen(false)}>
+              Services
+            </Link>
 
-            <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
-            <Link to="/services" onClick={() => setIsOpen(false)}>Services</Link>
-
-             {/* Mobile Dropdown  */}
+            {/* Mobile career Dropdown  */}
             <div>
               <button
                 onClick={() => setMobileCareerOpen(!mobileCareerOpen)}
@@ -142,23 +143,35 @@ function NavBar() {
               )}
             </div>
 
-            <Link to="/portfolio" onClick={() => setIsOpen(false)}>Portfolio</Link>
+            <Link to="/portfolio" onClick={() => setIsOpen(false)}>
+              Portfolio
+            </Link>
 
-             <Link to="/contactus" onClick={() => setIsOpen(false)}>Contact Us</Link>
+            <Link to="/contactus" onClick={() => setIsOpen(false)}>
+              Contact Us
+            </Link>
 
             {/* Social Icons */}
             <div className="flex text-xl space-x-3 py-4">
-              <Link to="https://www.instagram.com/muktinathkrishicompany/" target="_blank">
+              <Link
+                to="https://www.instagram.com/muktinathkrishicompany/"
+                target="_blank"
+              >
                 <FaInstagram />
               </Link>
-              <Link to="https://www.facebook.com/muktinathkrishiCo.Ltd/" target="_blank">
+              <Link
+                to="https://www.facebook.com/muktinathkrishiCo.Ltd/"
+                target="_blank"
+              >
                 <LiaFacebook />
               </Link>
-              <Link to="https://www.linkedin.com/company/muktinath-krishi-company-ltd" target="_blank">
+              <Link
+                to="https://www.linkedin.com/company/muktinath-krishi-company-ltd"
+                target="_blank"
+              >
                 <CiLinkedin />
               </Link>
             </div>
-
           </div>
         )}
       </div>

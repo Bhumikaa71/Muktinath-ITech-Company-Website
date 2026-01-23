@@ -14,7 +14,7 @@ function Home() {
   return (
     <div>
       <NavBar />
-      <div className="h-full bg-gradient-primary px-6 py-24 lg:py-32 mt-12">
+      <div className="h-full bg-gradient-primary px-6 py-24 lg:py-32 mt-14 lg:mt-20">
         <div className="flex flex-col my-auto h-full justify-center items-center">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-col lg:flex-row justify-between items-center">
             <div className="">
